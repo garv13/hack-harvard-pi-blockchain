@@ -130,22 +130,13 @@ export default function Shop() {
       <Header user={user} onSignIn={signIn} onSignOut={signOut}/>
 
       <ProductCard
-        name="Apple Pie"
-        description="You know what this is. Pie. Apples. Apple pie."
-        price={3}
-        pictureURL="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Apple_pie.jpg/1280px-Apple_pie.jpg"
-        pictureCaption="Picture by Dan Parsons - https://www.flickr.com/photos/dan90266/42759561/, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=323125"
-        onClickBuy={() => orderProduct("Order Apple Pie", 3, { productId: 'apple_pie_1' })}
+        name="1 Ton CO2"
+        description="One step towards carbon neutral"
+        price={11}
+        pictureURL="https://hackharvardfileshare.blob.core.windows.net/images/carbon-offset-icon.png"
+        pictureCaption="Picture by Shell Corp - https://www.shell.com/business-customers/lubricants-for-business/news-and-media-releases/2022/driving-to-a-sustainable-future/_jcr_content/par/grid_copy_copy_copy/p0/imageiconlist_copy/imageiconlistsection_1011321540/image.img.960.png/1644608371796/carbon-offset-icon.png?imwidth=960"
+        onClickBuy={() => orderProduct("Order Apple Pie", 11, { productId: 'apple_pie_1' })}
       />
-      <ProductCard
-        name="Lemon Meringue Pie"
-        description="Non-contractual picture. We might have used oranges because we had no lemons. Order at your own risk."
-        price={5}
-        pictureURL="https://live.staticflickr.com/1156/5134246283_f2686ff8a8_b.jpg"
-        pictureCaption="Picture by Sistak - https://www.flickr.com/photos/94801434@N00/5134246283, CC BY-SA 2.0"
-        onClickBuy={() => orderProduct("Order Lemon Meringue Pie", 5, { productId: 'lemon_pie_1' })}
-      />
-
       { showModal && <SignIn onSignIn={signIn} onModalClose={onModalClose} /> }
     </>
   );

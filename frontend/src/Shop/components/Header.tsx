@@ -9,7 +9,7 @@ interface Props {
 
 const headerStyle: CSSProperties = {
   padding: 8,
-  backgroundColor: "gray",
+  backgroundColor: "#3EAC62",
   color: "white",
   width: "100%",
   display: "flex",
@@ -20,14 +20,14 @@ const headerStyle: CSSProperties = {
 export default function Header(props: Props) {
   return (
     <header style={headerStyle}>
-      <div style={{ fontWeight: "bold" }}>Pi Bakery</div>
+      <div style={{ fontWeight: "bold" }}>SUS Tech</div>
 
       <div>
         {props.user === null ? (
-          <button onClick={props.onSignIn}>Sign in</button>
+          <button onClick={props.onSignIn}>Login</button>
         ) : (
           <div>
-            @{props.user.username} <button type="button" onClick={props.onSignOut}>Sign out</button>
+            @{props.user.username} <button type="button" onClick={props.onSignOut}>Logout</button>
           </div>
         )}
       </div>
