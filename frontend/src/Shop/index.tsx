@@ -135,7 +135,7 @@ export default function Shop() {
         price={11}
         pictureURL="https://hackharvardfileshare.blob.core.windows.net/images/carbon-offset-icon.png"
         pictureCaption="Picture by Shell Corp - https://www.shell.com/business-customers/lubricants-for-business/news-and-media-releases/2022/driving-to-a-sustainable-future/_jcr_content/par/grid_copy_copy_copy/p0/imageiconlist_copy/imageiconlistsection_1011321540/image.img.960.png/1644608371796/carbon-offset-icon.png?imwidth=960"
-        onClickBuy={() => orderProduct("Order Apple Pie", 11, { productId: 'apple_pie_1' })}
+        onClickBuy={() => orderProduct("Order 1 Ton CO2", 11, { productId: 'apple_pie_1' })}
       />
       { showModal && <SignIn onSignIn={signIn} onModalClose={onModalClose} /> }
     </>
